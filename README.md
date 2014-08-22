@@ -45,17 +45,17 @@ To **run the script**, it should be executed from the same directory that contai
 This section contains information on all the variables included in the output data set from the `run_analysis.R` script.
 
 `activity`	(factor)  
-	Label Indicates which of the 6 activities the subject was performing:  
-		WALKING  
-		WALKING_UPSTAIRS  
-		WALKING_DOWNSTAIRS  
-		SITTING  
-		STANDING  
-		LAYING  
+  Label that indicates which of the 6 activities the subject was performing:  
+    WALKING  - walking   
+    WALKING_UPSTAIRS  - walking up a et of stairs  
+    WALKING_DOWNSTAIRS  - walking down a set of stairs  
+    SITTING  - sitting  
+    STANDING  - standing   
+    LAYING  -  laying down
 
 `subject`	(factor)  
-	ID number indicating which subject the data was collected from.  
-		Ranges from 1 to 30
+  ID number indicating which subject the data was collected from.  
+    Ranges from 1 to 30
 
 **All Other Variables** (numeric)  
 	The dataset includes 66 other variables, these values are the MEAN (by subject and activity) of the __identically named__ feature variables in the orignal Samsung data set. These variables represent pre-processed measurements from the smartphone`s accelerometer (`Acc` in the variable name) and Gyroscope (`Gyro`) along all 3 axis (`-X, -Y, -Z` suffixes). All raw data from the phone was **captured in standard gravity units `g`**. 
