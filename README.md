@@ -45,8 +45,8 @@ To **run the script**, it should be executed from the same directory that contai
 This section contains information on all the variables included in the output data set from the `run_analysis.R` script.
 
 `activity`	(factor)  
-  Label that indicates which of the 6 activities the subject was performing:  
-    WALKING  - walking   
+>Label that indicates which of the 6 activities the subject was performing:  
+>>WALKING  - walking   
     WALKING_UPSTAIRS  - walking up a et of stairs  
     WALKING_DOWNSTAIRS  - walking down a set of stairs  
     SITTING  - sitting  
