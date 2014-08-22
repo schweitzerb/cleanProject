@@ -58,7 +58,7 @@ This section contains information on all the variables included in the output da
 >>Ranges from 1 to 30
 
 **All Other Variables** (numeric)  
->The dataset includes 66 other variables, these values are the MEAN (by subject and activity) of the *identically named* feature variables in the orignal Samsung data set. These variables represent pre-processed measurements from the smartphone's accelerometer (`Acc` in the variable name) and Gyroscope (`Gyro`) along all 3 axis (`-X`, `-Y, `-Z` suffixes). All raw data from the phone was **captured in standard gravity units `g`**. 
+>The dataset includes 66 other variables, **the values of these variabels are the MEAN (by subject and activity) of the identically named feature variables** in the orignal Samsung data set. These variables represent pre-processed measurements from the smartphone's accelerometer (`Acc` in the variable name) and Gyroscope (`Gyro`) along all 3 axis (`-X`, `-Y, `-Z` suffixes). All raw data from the phone was **captured in standard gravity units `g`**. 
 >
 >Data from the acceleromater has further been split into acceleration due to Gravity (`GravityAcc`) and acceleration due to movement of the subject`s body (`BodyAcc`). Jerk and magnitude signals were also calculated and included as `Jerk` and `Mag` in the variable name respectively. The `t` and `f` prefixes indicate time-domain vs. frequency domain signals.
 
