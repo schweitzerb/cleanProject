@@ -8,9 +8,9 @@ This repo contains the script and README.md for my course project for the Course
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ## The Samsung Dataset
-The Samsung dataset contains pre-processed measurments from a group of 30 volunteers who each performed 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone on the waist. The device`s accelerometer and gyroscope were used to capture linear acceleration and angular velocity. The dataset has also  been randomly partitioned into two sets: training data and test data.
+The Samsung dataset contains pre-processed measurments from a group of 30 volunteers who each performed 6 activities while wearing a smartphone on the waist. The device`s accelerometer and gyroscope were used to capture linear acceleration and angular velocity. The dataset has also  been randomly partitioned into two sets: training data and test data.
 
-The Files included with the Samsung data are:
+The files included with the Samsung data are:
 - `README.txt`: Information about the project and description of the data.
 - `features_info.txt`: Shows information about the variables used on the feature vector.
 - `features.txt`: List of all features.
@@ -22,15 +22,16 @@ The Files included with the Samsung data are:
 - `train/subject_train.txt`: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 - `test/subject_test.txt`: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
-Both the train and test data sets also include `Inertial Signals` folders with additional data. However these are not relevant for this project, and hence not discussed any further.
+Both the `train` and `test` data sets also include `Inertial Signals` folders with additional data. However these are not relevant for this project, and hence not discussed any further.
 
-For a more through description of the Samsung Dataset, please refer to the README.txt included with the original data.
+For a more through description of the Samsung data set, please refer to the README.txt included with the original data.
 
 
 ## run_analysis.R
 
-The script takes the Samsung data set and performs the following steps to generate a single tidy data set. The tidy dataset summarizes the measurements via their mean by subject and activity.
+The script takes the Samsung data set and performs the steps below to generate a single tidy data set. The tidy data set summarizes each measurement via its mean by subject and activity.
 
+The `run_analysis.R` sript:
  * Loads and merges the training and the test sets to create a single data set.
  * Replaces the activity codes in the Samsung data with the corresponding activity names.
  * Labels the variables with descriptive variable names which match the names of the feature vectore form the Samsung data.
@@ -43,20 +44,20 @@ To **run the script**, it should be executed from the same directory that contai
 
 This section contains information on all the variables included in the output data set from the `run_analysis.R` script.
 
-`activity`   (factor)
-	Label Indicates which of the 6 activities the subject was performing: 
-		WALKING 
-		WALKING_UPSTAIRS 
-		WALKING_DOWNSTAIRS 
-		SITTING 
-		STANDING 
-		LAYING 
+`activity`	(factor)  
+	Label Indicates which of the 6 activities the subject was performing:  
+		WALKING  
+		WALKING_UPSTAIRS  
+		WALKING_DOWNSTAIRS  
+		SITTING  
+		STANDING  
+		LAYING  
 
-`subject`   (factor)
-	ID number indicating which subject the data was collected from.
+`subject`	(factor)  
+	ID number indicating which subject the data was collected from.  
 		Ranges from 1 to 30
 
-**All Other Variables** (numeric)
+**All Other Variables** (numeric)  
 	The dataset includes 66 other variables, these values are the MEAN (by subject and activity) of the __identically named__ feature variables in the orignal Samsung data set. These variables represent pre-processed measurements from the smartphone`s accelerometer (`Acc` in the variable name) and Gyroscope (`Gyro`) along all 3 axis (`-X, -Y, -Z` suffixes). All raw data from the phone was **captured in standard gravity units `g`**. 
 
 	Data from the acceleromater has further been split into acceleration due to Gravity (`GravityAcc`) and acceleration due to movement of the subject`s body (`BodyAcc`). Jerk and magnitude signals were also calculated and included as `Jerk` and `Mag` in the variable name respectively. The `t` and `f` prefixes indicate time-domain vs. frequency domain signals.
