@@ -31,14 +31,14 @@ For a more through description of the Samsung data set, please refer to the READ
 
 The script takes the Samsung data set and performs the steps below to generate a single tidy data set. The tidy data set summarizes each measurement via its mean by subject and activity.
 
-The `run_analysis.R` sript:
+To `run_analysis.R` sript:
  * Loads and merges the training and the test sets to create a single data set.
  * Replaces the activity codes in the Samsung data with the corresponding activity names.
  * Labels the variables with descriptive variable names which match the names of the feature vectore form the Samsung data.
  * Extracts only the mean and standard deviation for each measurement form the feature vector. Measurments in the feature vector without a mean or standard deviation are discarded. 
  * Generates a second, independent tidy data set with the average of each variable by activity and subject and writes this data set to `course_project_tidyData.txt`.
 
-To **run the script**, it should be executed from the same directory that contains the `README.txt` of the Samsung data set.
+The script itself also contains detailed comments. To **run the script**, it should be executed from the same directory that contains the `README.txt` of the Samsung data set.
 
 ## Codebook
 
